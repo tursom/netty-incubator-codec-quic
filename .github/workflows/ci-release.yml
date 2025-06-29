@@ -166,7 +166,7 @@ jobs:
         working-directory: ./prepare-release-workspace/
         if: ${{ failure() }}
         # Rollback the release in case of an failure
-        run: bash ./.github/scripts/release_rollback.sh release.properties netty/netty-incubator-codec-quic main
+        run: bash ./.github/scripts/release_rollback.sh release.properties tursom/netty-incubator-codec-quic main
 
   stage-release-windows-x86_64:
     runs-on: windows-2022
@@ -259,7 +259,7 @@ jobs:
         working-directory: ${{ github.workspace }}/prepare-release-workspace
         if: ${{ failure() }}
         # Rollback the release in case of an failure
-        run: ./.github/scripts/release_rollback.ps1 release.properties netty/netty-incubator-codec-quic main
+        run: ./.github/scripts/release_rollback.ps1 release.properties tursom/netty-incubator-codec-quic main
 
   stage-release-macos:
     strategy:
@@ -350,7 +350,7 @@ jobs:
         working-directory: ./prepare-release-workspace/
         if: ${{ failure() }}
         # Rollback the release in case of an failure
-        run: bash ./.github/scripts/release_rollback.sh release.properties netty/netty-incubator-codec-quic main
+        run: bash ./.github/scripts/release_rollback.sh release.properties tursom/netty-incubator-codec-quic main
 
   deploy-staged-release:
     runs-on: ubuntu-latest
@@ -442,4 +442,4 @@ jobs:
         working-directory: ./prepare-release-workspace/
         if: ${{ failure() }}
         # Rollback the release in case of an failure
-        run: bash ./.github/scripts/release_rollback.sh release.properties netty/netty-incubator-codec-quic main
+        run: bash ./.github/scripts/release_rollback.sh release.properties tursom/netty-incubator-codec-quic main
