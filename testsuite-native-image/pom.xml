@@ -17,7 +17,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>io.netty.incubator</groupId>
+    <groupId>cn.tursom.netty.incubator</groupId>
     <artifactId>netty-incubator-codec-parent-quic</artifactId>
     <version>0.0.74.Final-SNAPSHOT</version>
   </parent>
@@ -106,7 +106,7 @@
               </execution>
             </executions>
             <configuration>
-              <mainClass>io.netty.incubator.codec.quic.example.QuicServerExample</mainClass>
+              <mainClass>example.cn.tursom.netty.incubator.codec.quic.QuicServerExample</mainClass>
               <imageName>native-image-quic-server</imageName>
               <metadataRepository>
                 <enabled>true</enabled>
@@ -198,7 +198,7 @@
               </execution>
             </executions>
             <configuration>
-              <mainClass>io.netty.incubator.codec.quic.example.QuicClientExample</mainClass>
+              <mainClass>example.cn.tursom.netty.incubator.codec.quic.QuicClientExample</mainClass>
               <imageName>native-image-quic-client</imageName>
               <metadataRepository>
                 <enabled>true</enabled>

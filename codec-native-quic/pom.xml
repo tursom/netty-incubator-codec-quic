@@ -17,7 +17,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>io.netty.incubator</groupId>
+    <groupId>cn.tursom.netty.incubator</groupId>
     <artifactId>netty-incubator-codec-parent-quic</artifactId>
     <version>0.0.74.Final-SNAPSHOT</version>
   </parent>
@@ -30,8 +30,8 @@
   <properties>
     <javaModuleNameClassifier>${os.detected.name}.${os.detected.arch}</javaModuleNameClassifier>
     <javaModuleNameWithClassifier>${javaModuleName}.${javaModuleNameClassifier}</javaModuleNameWithClassifier>
-    <javaModuleName>io.netty.incubator.codec.quic</javaModuleName>
-    <fragmentHost>io.netty.incubator.netty-incubator-codec-classes-quic</fragmentHost>
+    <javaModuleName>cn.tursom.netty.incubator.codec.quic</javaModuleName>
+    <fragmentHost>cn.tursom.netty.incubator.netty-incubator-codec-classes-quic</fragmentHost>
     <nativeSourceDirectory>${project.basedir}/src/main/c</nativeSourceDirectory>
     <nativeLibOnlyDir>${project.build.directory}/native-lib-only</nativeLibOnlyDir>
     <skipTests>false</skipTests>
@@ -514,7 +514,7 @@
             <artifactId>maven-surefire-plugin</artifactId>
             <configuration>
               <excludes>
-                <exclude>io.netty.incubator.codec.quic.QuicChannelEchoTest</exclude>
+                <exclude>cn.tursom.netty.incubator.codec.quic.QuicChannelEchoTest</exclude>
               </excludes>
             </configuration>
           </plugin>
