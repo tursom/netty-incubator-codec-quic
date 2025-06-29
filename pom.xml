@@ -48,9 +48,9 @@
   <inceptionYear>2020</inceptionYear>
 
   <scm>
-    <url>https://github.com/netty/netty-incubator-codec-quic</url>
-    <connection>scm:git:git://github.com/netty/netty-incubator-codec-quic.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com/netty/netty-incubator-codec-quic.git</developerConnection>
+    <url>https://github.com/tursom/netty-incubator-codec-quic</url>
+    <connection>scm:git:git://github.com/tursom/netty-incubator-codec-quic.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/tursom/netty-incubator-codec-quic.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
 
