@@ -2,8 +2,8 @@
     "rules": [
         {"includeClasses": "**"},
         {"excludeClasses": "ch.qos.logback.**"},
-        {"excludeClasses": "cn.netty.incubator.codec.quic.NoValidationQuicTokenHandler"},
-        {"excludeClasses": "cn.netty.incubator.codec.quic.QuicChannelValidationHandler"},
+        {"excludeClasses": "cn.tursom.netty.incubator.codec.quic.NoValidationQuicTokenHandler"},
+        {"excludeClasses": "cn.tursom.netty.incubator.codec.quic.QuicChannelValidationHandler"},
         {"excludeClasses": "org.apache.maven.surefire.**"}
     ],
     "regexRules": [

@@ -1,6 +1,6 @@
 {
     "rules": [
         {"excludeClasses": "**"},
-        {"includeClasses": "cn.netty.incubator.codec.quic.**"}
+        {"includeClasses": "cn.tursom.netty.incubator.codec.quic.**"}
     ]
 }

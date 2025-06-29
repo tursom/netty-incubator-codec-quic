@@ -22,7 +22,7 @@
     <version>9</version>
   </parent>
 
-  <groupId>cn.netty.incubator</groupId>
+  <groupId>cn.tursom.netty.incubator</groupId>
   <artifactId>netty-incubator-codec-parent-quic</artifactId>
   <version>0.0.72.Final</version>
   <name>Netty/Incubator/Codec/Parent/Quic</name>

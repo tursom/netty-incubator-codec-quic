@@ -21,9 +21,9 @@
         </encoder>
     </appender>
 
-    <appender name="TEST" class="cn.tursom.netty.incubator.codec.quic.TestLogBackAppender"/>
+    <appender name="TEST" class="cn.tursom.quicmc.netty.quic.TestLogBackAppender"/>
 
-    <logger name="cn.tursom.netty.incubator.codec.quic.BoringSSLLoggingKeylog" level="debug" additivity="false">
+    <logger name="cn.tursom.quicmc.netty.quic.BoringSSLLoggingKeylog" level="debug" additivity="false">
         <appender-ref ref="TEST" />
     </logger>
 
