@@ -148,7 +148,7 @@ jobs:
             windows-x86_64-maven-cache-
 
       - name: Build project
-        run: ./mvnw.cmd -B -ntp --file pom.xml clean package
+        run: ./mvnw.cmd -B -ntp --file pom.xml clean install -DskipTests
 
       - uses: actions/upload-artifact@v4
         if: ${{ always() }}
@@ -199,7 +199,7 @@ jobs:
             macos-${{ matrix.arch }}-maven-cache-
 
       - name: Build project
-        run: ./mvnw -B -ntp --file pom.xml clean package
+        run: ./mvnw -B -ntp --file pom.xml clean install -DskipTests
 #        env:
 #          CARGO_BUILD_TARGET: ${{ matrix.arch }}-apple-darwin
 #          CARGO_TARGET_DIR: target/${{ matrix.arch }}-apple-darwin
