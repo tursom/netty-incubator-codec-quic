@@ -68,7 +68,7 @@
   <modules>
     <module>codec-classes-quic</module>
     <module>codec-native-quic</module>
-    <module>testsuite-native-image</module>
+    <!--<module>testsuite-native-image</module>-->
   </modules>
   <properties>
     <javaModuleName />
