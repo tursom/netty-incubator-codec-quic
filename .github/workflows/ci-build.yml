@@ -200,9 +200,9 @@ jobs:
 
       - name: Build project
         run: ./mvnw -B -ntp --file pom.xml clean package
-        env:
-          CARGO_BUILD_TARGET: ${{ matrix.arch }}-apple-darwin
-          CARGO_TARGET_DIR: target/${{ matrix.arch }}-apple-darwin
+#        env:
+#          CARGO_BUILD_TARGET: ${{ matrix.arch }}-apple-darwin
+#          CARGO_TARGET_DIR: target/${{ matrix.arch }}-apple-darwin
 
       - uses: actions/upload-artifact@v4
         if: ${{ always() }}
