@@ -182,8 +182,8 @@ jobs:
 
       - name: Install stable rust toolchain
         uses: dtolnay/rust-toolchain@stable
-        with:
-          targets: ${{ matrix.arch }}-apple-darwin
+#        with:
+#          targets: ${{ matrix.arch }}-apple-darwin
 
       - name: Install build tools
         run: |
